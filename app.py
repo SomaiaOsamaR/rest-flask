@@ -44,6 +44,7 @@ app=Flask(__name__)
 api=Api(app)
 
 
+
 # In[7]:
 
 
@@ -56,6 +57,9 @@ data_arg.add_argument("Country" , type=str ,help="Enter Country")
 
 # In[8]:
 
+@app.route('/')
+def index():
+    return "Hello.. Nagwa App!"
 
 # To Solve Arabic text in response body issue 
 def inverse_repr(a_string):
