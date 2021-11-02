@@ -33,7 +33,7 @@
 from flask import Flask, jsonify 
 # Flask-RESTful is an extension for Flask that adds support for quickly building REST APIs.
 from flask_restful import Resource, Api , reqparse
-#import pandas as pd 
+import pandas as pd 
 
 
 # In[6]:
