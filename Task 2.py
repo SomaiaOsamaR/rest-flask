@@ -185,7 +185,7 @@ pip freeze > requirements.txt
 app.run(debug = True,use_reloader = False)
 dubug = True
 if __name__ == '__main__':
-     #app.run(port=5000, debug=True)
+     app.run(port=5000, debug=True)
 
 
 # In[ ]:
