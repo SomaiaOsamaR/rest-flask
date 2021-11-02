@@ -180,11 +180,16 @@ api.add_resource(Create_Update,'/')
 
 # In[18]:
 
-const port = Process.env.PORT || 3000 
+
 # main function for calling the app
 app.run(debug = True,use_reloader = False)
 if __name__ == '__main__':
-     app.run(debug=True)
+    app.set('port', (process.env.PORT || 5000))
+    // Start node server
+    app.listen(app.get('port'), function() {
+    console.log('Node server is running on port ' + app.get('port'))
+    
+    app.run(debug=True)
 
 
 # In[ ]:
