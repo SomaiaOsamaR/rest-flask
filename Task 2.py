@@ -182,10 +182,10 @@ api.add_resource(Create_Update,'/')
 
 
 # main function for calling the app
-app.run(debug = True,use_reloader = False)
-dubug = True
-if __name__ == '__main__':
-     app.run(port=5000, debug=True)
+#app.run(debug = True,use_reloader = False)
+#dubug = True
+#if __name__ == '__main__':
+   #  app.run(port=5000, debug=True)
 
 
 # In[ ]:
