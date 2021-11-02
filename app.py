@@ -43,7 +43,9 @@ from flask_restful import Resource, Api , reqparse
 app=Flask(__name__)
 api=Api(app)
 
-
+@app.route('/')
+def index():
+    return "Hello.. Nagwa App!"
 # In[7]:
 
 
@@ -182,7 +184,7 @@ api.add_resource(Create_Update,'/')
 
 
 # main function for calling the app
-app.run(debug = True,use_reloader = False)
+#app.run(debug = True,use_reloader = False)
 if __name__ == '__main__':
     app.run(debug=True)
 
