@@ -182,9 +182,9 @@ pip freeze > requirements.txt
 
 
 # main function for calling the app
-#app.run(debug = True,use_reloader = False)
-#dubug = True
-#if __name__ == '__main__':
+app.run(debug = True,use_reloader = False)
+dubug = True
+if __name__ == '__main__':
      #app.run(port=5000, debug=True)
 
 
